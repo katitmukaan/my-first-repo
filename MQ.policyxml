@@ -1,0 +1,17 @@
+<policies>
+  <policy policyType="MQEndpoint" policyName="MQPolicy" policyTemplate="MQEndpoint">
+    <connection>CLIENT</connection>
+    <destinationQueueManagerName>QM1</destinationQueueManagerName>
+    <queueManagerHostname>localhost</queueManagerHostname>
+    <listenerPortNumber>1414</listenerPortNumber>
+    <channelName>DEV.ADMIN.SVRCONN</channelName>
+    <CCDTUrl></CCDTUrl>
+    <securityIdentity>MqIdentity</securityIdentity>
+    <useSSL>false</useSSL>
+    <SSLPeerName></SSLPeerName>
+    <SSLCipherSpec></SSLCipherSpec>
+    <SSLCertificateLabel></SSLCertificateLabel>
+    <MQApplName></MQApplName>
+    <reconnectOption>default</reconnectOption>
+  </policy>
+</policies>

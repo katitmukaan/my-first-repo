@@ -1,0 +1,20 @@
+root@ok23-Latitude-5480:~/IBM/ACET12/workspace23/TEST_SERVER_31/overrides# cat server.conf.yaml
+---
+RestAdminListener:
+  port: 7600
+  ipcSocket: '/tmp/c2a91a37-c467-4d8a-bf09-e6c8040276fb.uds'     #  DO NOT CHANGE THIS VALUE. USED FOR LOCAL COMMS WITH THE SERVER
+ResourceManagers:
+  HTTPConnector:
+    ListenerPort: 7800
+  JVM:
+    jvmDebugPort: 9997
+
+Credentials:
+  ServerCredentials:
+    mq:
+      MqIdentity:
+#        username: 'app'
+        username: 'admin'
+        password: 'passw0rd'
+
+

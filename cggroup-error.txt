@@ -1,0 +1,12 @@
+
+cgroups: cgroup mountpoint does not exist: unknown
+
+https://askubuntu.com/questions/1171460/how-to-fix-docker-error-response-from-daemon-cgroups-cannot-find-cgroup-moun
+
+
+
+sudo mkdir /sys/fs/cgroup/systemd
+sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
+
+
+
